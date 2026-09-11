@@ -47,8 +47,6 @@ function render() {
   <div class="workspace">
    <aside class="library panel"><div class="library-head"><strong>${icon('music',22)} Your Library</strong><div><button class="create">+ <span>Create</span></button><button>${icon('expand')}</button></div></div><div class="filters"><button>Playlists</button><button>Podcasts</button><button>Albums</button><button>Artists</button></div><div class="library-tools"><button>${icon('search')}</button><button>Recents ${icon('list',15)}</button></div><nav>
     ${libraryItem('Liked Songs', 'Playlist • Akshaya', '<div class="liked-art">'+icon('heart',17)+'</div>')}
-    ${libraryItem('Your Episodes', 'Playlist • Saved & downloaded episodes', '<div class="episodes-art">'+icon('mic',17)+'</div>', '<span class="download">↓</span>')}
-    <div class="library-divider"></div>
     ${siteData.albums.map(album => libraryItem(album.name, album.subtitle, `<div class="album-art">${cover(album)}</div>`)).join('')}
    </nav></aside>
    <main class="main panel"><section class="profile"><div class="profile-art">${siteData.profileImage ? `<img src="${siteData.profileImage}" alt="${siteData.profileName}"/>` : '<span>A</span>'}</div><div class="profile-info"><small>Profile</small><h1>${siteData.profileName}</h1><p><b>${s.playlists} Public Playlists</b><i>•</i> ${s.followers} Followers <i>•</i> ${s.following} Following</p></div></section><section class="artists-section"><div class="section-heading"><h2>Top artists this month</h2><button id="show-all">Show all</button></div><div class="artist-grid">${siteData.artists.map((artist,i)=>`<button class="artist-card" data-artist="${artist.name}"><div class="artist-art">${cover(artist,'artist')}</div><b>${artist.name}</b><small>Artist</small></button>`).join('')}</div></section></main>
