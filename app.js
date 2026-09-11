@@ -1,19 +1,30 @@
+import {
+  albumBlr,
+  albumHeart,
+  albumLoveName,
+  albumMidnightSun,
+  artistAksomaniac,
+  artistAnirudh,
+  artistOlivia,
+  artistSai,
+} from './image-data.js';
+
 // ── Replace any content for the profile and future puzzle here. ──────────────
 const siteData = {
   profileName: 'akshaya',
   profileImage: '',
   profileStats: { playlists: 10, followers: 19, following: 78 },
   albums: [
-    { name: 'Album 01', image: '', subtitle: 'Album • Akshaya', tone: 'violet' },
-    { name: 'Album 02', image: '', subtitle: 'Album • Akshaya', tone: 'blue' },
-    { name: 'Album 03', image: '', subtitle: 'Album • Akshaya', tone: 'orange' },
-    { name: 'Album 04', image: '', subtitle: 'Album • Akshaya', tone: 'rose' },
+    { name: 'love [name]', image: albumLoveName, subtitle: 'Album • Akshaya' },
+    { name: 'midnight sun', image: albumMidnightSun, subtitle: 'Album • Akshaya' },
+    { name: 'BLR', image: albumBlr, subtitle: 'Album • Akshaya' },
+    { name: '<3', image: albumHeart, subtitle: 'Album • Akshaya' },
   ],
   artists: [
-    { name: 'Artist 01', image: '', tone: 'violet' },
-    { name: 'Artist 02', image: '', tone: 'cyan' },
-    { name: 'Artist 03', image: '', tone: 'amber' },
-    { name: 'Artist 04', image: '', tone: 'pink' },
+    { name: 'Aksomaniac', image: artistAksomaniac },
+    { name: 'Anirudh Ravichander', image: artistAnirudh },
+    { name: 'Sai Abhyankkar', image: artistSai },
+    { name: 'Olivia Rodrigo', image: artistOlivia },
   ],
   puzzleProgress: { tracksDiscovered: 3, totalTracks: 10, albumsDiscovered: 1, totalAlbums: 4 },
   player: { song: 'honeybee', artist: 'Olivia Rodrigo', albumCover: '', duration: '3:43' }
