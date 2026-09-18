@@ -1,6 +1,6 @@
 # 🎵 Spotifia
 
-A Spotify-inspired interactive puzzle website combining **music, puzzles, and storytelling**.
+A Spotify-inspired interactive puzzle website combining **music, puzzles, and storytelling**, created as a small personal experience for someone special.
 
 ## ✨ Features
 
@@ -44,8 +44,6 @@ Then open:
 http://localhost:4173
 ```
 
-The project uses a simple HTML entry point and loads `app.js` as a module.
-
 ## 📁 Structure
 
 ```text
@@ -62,4 +60,4 @@ Spotifia/
 
 **Faaz Shabeer**
 
-**Music × Puzzles × Web Design 🎶🧩**
+*Music × Puzzles × Web Design, with a little something personal behind it.* 🎶
